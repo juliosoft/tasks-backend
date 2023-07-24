@@ -18,16 +18,9 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-<!--		<sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>-->
-<!--		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>-->
-
-
-		<!--Sonar properties -->
-		<jacoco.dest.file>target/jacoco.exec</jacoco.dest.file>
-		<sonar.java.codeCoveragePlugin>jacoco</sonar.java.codeCoveragePlugin>
-		<sonar.coverage.jacoco.xmlReportPaths>
-			target/surefire-reports/*.xml
-		</sonar.coverage.jacoco.xmlReportPaths>
+		<sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+		<sonar.jacoco.reportPath>${project.basedir}/target/jacoco.exec</sonar.jacoco.reportPath>
 	</properties>
 
 	<dependencies>
@@ -74,7 +67,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.10</version>
+				<version>0.8.6</version>
 				<executions>
 					<execution>
 						<goals>
