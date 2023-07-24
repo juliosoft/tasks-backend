@@ -26,7 +26,7 @@
 		<jacoco.dest.file>target/jacoco.exec</jacoco.dest.file>
 		<sonar.java.codeCoveragePlugin>jacoco</sonar.java.codeCoveragePlugin>
 		<sonar.coverage.jacoco.xmlReportPaths>
-			target/jacoco/jacoco.xml
+			target/surefire-reports/*.xml
 		</sonar.coverage.jacoco.xmlReportPaths>
 	</properties>
 
